@@ -2,6 +2,10 @@
 
 ONE skill for ALL SkynetLabs professional short-form reels. Replaces `saddamh1-replicator` + `interview-clipper` + `voiceover-batch`.
 
+## Status
+
+Last reviewed: September 2026 · release v2026.09
+
 ## Five modes
 - **interview** — long video → 9:16 shorts (auto-clip best moments)
 - **saddamh1** — talking-head from script (Hinglish/Urdu freelancer-business advice, default)
