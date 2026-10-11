@@ -4,7 +4,7 @@ ONE skill for ALL SkynetLabs professional short-form reels. Replaces `saddamh1-r
 
 ## Status
 
-Last reviewed: September 2026 · release v2026.09
+Last reviewed: October 2026 · release v2026.10
 
 ## Five modes
 - **interview** — long video → 9:16 shorts (auto-clip best moments)
@@ -22,3 +22,11 @@ Claude Code skill + FFmpeg + Python + Whisper + pyannote. Free, local-first, Win
 Built by [Waseem Nasir / SkynetLabs](https://github.com/waseemnasir2k26).
 
 MIT
+
+## Work with SkynetLabs
+
+Built by [Waseem Nasir](https://www.skynetjoe.com/?utm_source=github&utm_medium=readme&utm_campaign=reel-studio) at SkynetLabs — n8n + AI automation for small businesses.
+
+- Hire on Fiverr: https://www.fiverr.com/agencies/skynetjoellc
+- Hire on Upwork: https://www.upwork.com/freelancers/muhammadwaseemnasir
+- Book a free call: https://calendly.com/skynetlabs/schedule-a-free-consultation
