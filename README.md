@@ -1,32 +1,42 @@
 # reel-studio
 
-ONE skill for ALL SkynetLabs professional short-form reels. Replaces `saddamh1-replicator` + `interview-clipper` + `voiceover-batch`.
+A Claude Code skill file (`SKILL.md`) that describes one workflow for five kinds of short-form reel: interview clips, talking-head from a script, TTS voiceover, kinetic quote cards and motion-graphics explainers. It is the written playbook SkynetLabs uses with Claude Code, shared as-is.
 
-## Status
+## What the skill covers
 
-Last reviewed: October 2026 · release v2026.10
+- **interview** - long video into 9:16 shorts (pick the best moments).
+- **saddamh1** - talking-head reel from a script, Hinglish/Urdu business-advice style (the default).
+- **tts** - voiceover-only reel.
+- **kinetic-stoic** - text-only quote reel.
+- **mograph** - motion-graphics explainer with UI chips, no face cam.
+- Locked defaults for title cards, B-roll card timing and contrast, caption style (Montserrat Bold, lower third), voice EQ, music ducking and loudness (-14 LUFS for Reels/TikTok/Shorts).
 
-## Five modes
-- **interview** — long video → 9:16 shorts (auto-clip best moments)
-- **saddamh1** — talking-head from script (Hinglish/Urdu freelancer-business advice, default)
-- **tts** — voiceover-only reel
-- **kinetic-stoic** — text-only quote reel
-- **mograph** — motion-graphics explainer w/ UI chips + halos, no face cam (decoded from @beingmayy + @mister.usb)
+Stack named in the skill: FFmpeg, Python, Whisper, pyannote. Local-first, no paid editor.
 
-## Stack
-Claude Code skill + FFmpeg + Python + Whisper + pyannote. Free, local-first, Windows-tested (RTX 4060).
+## How to use it
 
-## Triggers
-"reel for X", "script for", "clip this interview", "edit my video", "make reel", "saddamh1 style", "voiceover reel", "mograph", "motion graphics reel", "explainer reel", "beingmayy style", "mister.usb style".
+```bash
+git clone https://github.com/waseemnasir2k26/reel-studio.git ~/.claude/skills/reel-studio
+```
 
-Built by [Waseem Nasir / SkynetLabs](https://github.com/waseemnasir2k26).
+Then in Claude Code ask for "a reel for ..." or run `/reel-studio`. The trigger phrases are listed in the `description` line at the top of `SKILL.md`.
 
-MIT
+## For you if
 
-## Work with SkynetLabs
+You use Claude Code and want a worked example of a long, opinionated video skill: what to lock, what to log, how to write down QA rules so they survive between sessions.
 
-Built by [Waseem Nasir](https://www.skynetjoe.com/?utm_source=github&utm_medium=readme&utm_campaign=reel-studio) at SkynetLabs — n8n + AI automation for small businesses.
+## Status and limits
 
-- Hire on Fiverr: https://www.fiverr.com/agencies/skynetjoellc
-- Hire on Upwork: https://www.upwork.com/freelancers/muhammadwaseemnasir
-- Book a free call: https://calendly.com/skynetlabs/schedule-a-free-consultation
+- This repo holds `SKILL.md` only. The scripts and reference files it points to (`pipeline/`, `references/SADDAMH1-MASTER-PLAYBOOK.md`) and the `interview-clip-engine` project folder are not included, so the skill cannot run end to end from this repo alone.
+- Paths in the file are Windows paths from the author's machine. Change them to yours.
+- Tested by the author on Windows with an RTX 4060. Nothing here is verified on other setups.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
+
+---
+
+Built by SkynetLabs. Contact: info@skynetjoe.com
+
+Need this wired into your business? SkynetLabs builds voice agents, n8n back offices and sites that convert → https://skynetjoe.com
